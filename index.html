@@ -8,38 +8,44 @@
     <link href="style.css" rel="stylesheet" />
     <title>Document</title>
 </head>
+
 <body>
-        <header>
-                <h1>LE HALL DU JAPON</h1>
-                <nav id="menu"><a href="#" id="Ma">Acceuil</a><a href="#" id="Ma">Forum</a><a href="#" id="Ma">Jeux</a>
-                <a href="#" id="Ma">Scan</a><a href="#" id="Ma">Anime</a><a href="#" id="Ma">Info</a></nav>
-            
-        </header>
-    <div id="blocform"> 
-    <div id="formtitle">
-        <h1>rejoint l'équipe !</h1>
+    <header>
+        <br>
+        <h1 class="title">LE HALL DU JAPON</h1>
+        <nav id="menu"><img src="image/garcon.png" class="garcon"><a href="home.html" id="Ma">Acceuil</a><a href="#" id="Ma">Forum</a><a href="#" id="Ma">Jeux</a>
+            <a href="#" id="Ma">Scan</a><a href="#" id="Ma">Anime</a><a href="#" id="Ma">Info</a><img src="image/fille.png" class="fille"></nav>
+
+    </header>
+    <div id="blocform">
+        <div id="formtitle">
+            <h1 class="formtitle">rejoint l'équipe !</h1>
+        </div>
+        <div id="formulary">
+            <form method="post" action="" autocomplete="on">
+                <p class="G"><label for="nom"></label>Nom :</label>
+                    <input id="nom" type="text" name="username" placeholder="votre nom" required>
+                </p>
+                <p class="G"><label for="prénom">Prénom :</label>
+                    <input id="prénom" type="text" name="user_surname" placeholder="votre prénom" required>
+                </p>
+                <p class="G"><label for="password">Mot De Passe :</label>
+                    <input id="password" type="password" name="user_password" placeholder="votre mot de passe" required>
+                </p>
+                <p class="G"><label for="age">Age : </label><input type="date" value="0" min="0" max="120" step="1" id="mp"></p>
+                <p class="G"><label for="email">Email :</label>
+                    <input type="email" id="email" name="email " placeholder="votre email">
+                </p>
+                <p>Me Tenir Informer Des MAJ Par Email <input type="radio" name="choice"> oui <input type="radio" name="choice"> non </p>
+                <label><input type="submit" value="inscription" class="s"></label>
+            </form>
+        </div>
     </div>
-    <div id="form">
-        <form method="post" action="" autocomplete="on">
-            <p class="G"><label for="nom"></label>Nom :</label>
-                <input id="nom" type="text" name="username" placeholder="votre nom" required>
-            </p>
-            <p class="G"><label for="prénom">Prénom :</label>
-                <input id="prénom" type="text" name="user_surname" placeholder="votre prénom" required>
-            </p>
-            <p class="G"><label for="password">Mot De Passe :</label>
-                <input id="password" type="password" name="user_password" placeholder="votre mot de passe" required>
-            </p>
-            <p class="G"><label for="age">Age : </label><input type="date" value="0" min="0" max="120" step="1" id="mp"></p>
-            <p class="G"><label for="email">Email :</label>
-                <input type="email" id="email" name="email " placeholder="votre email">
-            </p>
-            <p >Me Tenir Informer Des MAJ Par Email <input type="radio" name="choice"> oui <input type="radio"
-                    name="choice"> non </p>
-            <label><input type="submit" value="inscription" class="G"></label>
-        </form>
-    </div>
-    </div>
+    <footer>
+        <a href="https://discord.gg/dwzUuKpjha" target="_blank">
+            <img src="image/discord_icon.png" class="discord">
+        </a>
+    </footer>
 
 </body>
 
